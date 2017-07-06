@@ -1,0 +1,351 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title > Ama de casa, precio bajo </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background-color">
+
+    <ion-grid class="p-0">
+        <ion-row class="p-0">
+            <ion-col col-12>
+                <div class="img-top">
+                    <img src="../../assets/img/background.png" alt="">
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+
+        <ion-row>
+
+            <ion-col col-4 align="center">
+                
+                <div class="img-circle">
+                    <ion-icon name="chatboxes" class="img-circle message-telephone" color="message"></ion-icon>
+                </div>
+
+            </ion-col>
+
+            <ion-col col-4 align="center">
+
+                 <div>
+                    <img src="../../assets/img/ama_casa.jpg" alt="" class="img-circle image-service">
+                </div>
+                
+            </ion-col>
+
+            <ion-col col-4 align="center">
+
+                <div class="img-circle">
+                    <ion-icon name="call" class="img-circle message-telephone" color="telephone"></ion-icon>
+                </div>
+                
+            </ion-col>
+
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-12 align="center"  style="padding-right: 15px">
+                <!--Stars-->
+
+                <ion-icon name="star-half" *ngIf="rating == 0.5"color="star" class="m-l-10"></ion-icon>
+                
+                <ion-icon name="star" *ngIf="rating >= 1 || rating == 1.5" color="star" class="m-l-10"></ion-icon>
+                <ion-icon name="star" *ngIf="rating < .5" color="starOf" class=""></ion-icon>
+                <ion-icon name="star-half" *ngIf="rating == 1.5" color="star"></ion-icon>
+
+                <ion-icon name="star" *ngIf="rating >= 2 || rating == 2.5" color="star"></ion-icon>
+                <ion-icon name="star" *ngIf="rating < 1.5 " color="starOf"></ion-icon>
+                <ion-icon name="star-half" *ngIf="rating == 2.5 " color="star"></ion-icon>
+
+                <ion-icon name="star" *ngIf="rating >= 3 || rating == 3.5" color="star"></ion-icon>
+                <ion-icon name="star" *ngIf="rating < 2.5 " color="starOf"></ion-icon>
+                <ion-icon name="star-half" *ngIf="rating == 3.5"color="star"></ion-icon>
+
+                <ion-icon name="star" *ngIf="rating >= 4 || rating == 4.5" color="star"></ion-icon>
+                <ion-icon name="star" *ngIf="rating < 3.5" color="starOf"></ion-icon>
+                <ion-icon name="star-half" *ngIf="rating == 4.5 " color="star"></ion-icon>
+
+                <ion-icon name="star" *ngIf="rating >= 5 " color="star"></ion-icon>
+                <ion-icon name="star" *ngIf="rating < 4.5 " color="starOf"></ion-icon>
+                
+
+                <!--End Stars-->
+            </ion-col>
+        </ion-row>
+
+        <ion-row *ngIf="false">
+            <ion-col col-4 align="center">
+
+                <div class="img-circle">
+                    <ion-icon name="logo-googleplus" class="img-circle message-telephone social-service" color="googlePlus"></ion-icon>
+                </div>
+
+            </ion-col >
+            <ion-col col-4 align="center">
+
+                <div class="img-circle">
+                    <ion-icon name="logo-facebook" class="img-circle message-telephone social-service" color="facebook"></ion-icon>
+                </div>
+
+            </ion-col>
+            <ion-col col-4 align="center">
+
+                <div class="img-circle">
+                    <ion-icon name="logo-twitter" class="img-circle message-telephone social-service" color="twitter"></ion-icon>
+                </div>
+
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <p style="color: #868686">
+                    Soy una ama de casa que sabe trapear, barrer, cocinar, atender a enfermos. Todo para que no tengan que llamar a alguien más.
+                </p>
+            </ion-col>
+        </ion-row>
+
+
+        <!--Comentarios-->
+        <h5 align="center" style="margin-left:10px; color:#585858">Comentarios</h5>
+
+        <ion-card>
+
+            <ion-row>
+                <ion-col col-12>
+
+                    <!--Puntuacion que puso el usuario-->
+                    <ion-row>
+                        <ion-col col-2>
+                            <img src="../../assets/img/profile.jpg" alt="" class="img-circle" style="height: 45px;width: 45px;">
+                        </ion-col>
+
+                        <ion-col col-10>
+                           <ion-row>
+
+                               <ion-col col-11>
+                                    <p>Carlos Alatorre</p> 
+                               </ion-col>
+                               <ion-col col-1>
+                                    <ion-icon name="more" align="right" color="CardsIcons" class="options"></ion-icon>
+                               </ion-col>
+
+                           </ion-row>
+                           <ion-row>
+                                <!--Stars-->
+
+                            <ion-icon name="star-half" *ngIf="rating == 0.5"color="star" class="m-l-10"></ion-icon>
+                            
+                            <ion-icon name="star" *ngIf="rating >= 1 || rating == 1.5" color="star" class="m-l-10"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < .5" color="starOf" class=""></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 1.5" color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 2 || rating == 2.5" color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 1.5 " color="starOf"></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 2.5 " color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 3 || rating == 3.5" color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 2.5 " color="starOf"></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 3.5"color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 4 || rating == 4.5" color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 3.5" color="starOf"></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 4.5 " color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 5 " color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 4.5 " color="starOf"></ion-icon>
+                            
+
+                            <!--End Stars-->
+                           </ion-row>
+                        </ion-col>
+                    </ion-row>
+
+                    <!--Comentario-->
+                    <ion-row>
+                        <ion-col>
+                            <p style="font-size:14px; margin-left: 15px">
+                                Es una buena ama de casa pero me dejo el trapeador sucio.
+                            </p>
+                        </ion-col>
+                    </ion-row>
+
+                    <!--Fecha de publicacion-->
+                    <ion-row>
+                        <ion-col>
+                            <ion-icon name="clock" color="CardsIcons" class="m-l-15 clock-icon"></ion-icon>
+
+                            <p class="date-comment">Hace 1 hora aproximadamente</p>
+                        </ion-col>
+                    </ion-row>
+
+                </ion-col>
+            </ion-row>
+
+        </ion-card>
+
+
+        <!--Comienza-->
+
+        <ion-card>
+
+            <ion-row>
+                <ion-col col-12>
+
+                    <!--Puntuacion que puso el usuario-->
+                    <ion-row>
+                        <ion-col col-2>
+                            <img src="../../assets/img/profile3.jpg" alt="" class="img-circle" style="height: 45px;width: 45px;">
+                        </ion-col>
+
+                        <ion-col col-10>
+                           <ion-row>
+
+                               <ion-col col-11>
+                                    <p>Maria Villanueva Cruz</p> 
+                               </ion-col>
+                               <ion-col col-1>
+                                    <ion-icon name="more" align="right" color="CardsIcons" class="options"></ion-icon>
+                               </ion-col>
+
+                           </ion-row>
+                           <ion-row>
+                                <!--Stars-->
+
+                            <ion-icon name="star-half" *ngIf="rating == 0.5"color="star" class="m-l-10"></ion-icon>
+                            
+                            <ion-icon name="star" *ngIf="rating >= 1 || rating == 1.5" color="star" class="m-l-10"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < .5" color="starOf" class=""></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 1.5" color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 2 || rating == 2.5" color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 1.5 " color="starOf"></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 2.5 " color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 3 || rating == 3.5" color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 2.5 " color="starOf"></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 3.5"color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 4 || rating == 4.5" color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 3.5" color="starOf"></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 4.5 " color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 5 " color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 4.5 " color="starOf"></ion-icon>
+                            
+
+                            <!--End Stars-->
+                           </ion-row>
+                        </ion-col>
+                    </ion-row>
+
+                    <!--Comentario-->
+                    <ion-row>
+                        <ion-col>
+                            <p style="font-size:14px; margin-left: 15px">
+                                Siempre me ha dejado un excelente trabajo, la recomiendo  100%
+                            </p>
+                        </ion-col>
+                    </ion-row>
+
+                    <!--Fecha de publicacion-->
+                    <ion-row>
+                        <ion-col>
+                            <ion-icon name="clock" color="CardsIcons" class="m-l-15 clock-icon"></ion-icon>
+
+                            <p class="date-comment">Hace 1 hora aproximadamente</p>
+                        </ion-col>
+                    </ion-row>
+
+                </ion-col>
+            </ion-row>
+
+        </ion-card>
+
+        <ion-card>
+
+            <ion-row>
+                <ion-col col-12>
+
+                    <!--Puntuacion que puso el usuario-->
+                    <ion-row>
+                        <ion-col col-2>
+                            <img src="../../assets/img/profile2.jpg" alt="" class="img-circle" style="height: 45px;width: 45px;">
+                        </ion-col>
+
+                        <ion-col col-10>
+                           <ion-row>
+
+                               <ion-col col-11>
+                                    <p>Federico Gonzalez Gutierrez</p> 
+                               </ion-col>
+                               <ion-col col-1>
+                                    <ion-icon name="more" align="right" color="CardsIcons" class="options"></ion-icon>
+                               </ion-col>
+
+                           </ion-row>
+                           <ion-row>
+                                <!--Stars-->
+
+                            <ion-icon name="star-half" *ngIf="rating == 0.5"color="star" class="m-l-10"></ion-icon>
+                            
+                            <ion-icon name="star" *ngIf="rating >= 1 || rating == 1.5" color="star" class="m-l-10"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < .5" color="starOf" class=""></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 1.5" color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 2 || rating == 2.5" color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 1.5 " color="starOf"></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 2.5 " color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 3 || rating == 3.5" color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 2.5 " color="starOf"></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 3.5"color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 4 || rating == 4.5" color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 3.5" color="starOf"></ion-icon>
+                            <ion-icon name="star-half" *ngIf="rating == 4.5 " color="star"></ion-icon>
+
+                            <ion-icon name="star" *ngIf="rating >= 5 " color="star"></ion-icon>
+                            <ion-icon name="star" *ngIf="rating < 4.5 " color="starOf"></ion-icon>
+                            
+
+                            <!--End Stars-->
+                           </ion-row>
+                        </ion-col>
+                    </ion-row>
+
+                    <!--Comentario-->
+                    <ion-row>
+                        <ion-col>
+                            <p style="font-size:14px; margin-left: 15px">
+                                Pesimo trabajo siempre se va antes de terminar...
+                            </p>
+                        </ion-col>
+                    </ion-row>
+
+                    <!--Fecha de publicacion-->
+                    <ion-row>
+                        <ion-col>
+                            <ion-icon name="clock" color="CardsIcons" class="m-l-15 clock-icon"></ion-icon>
+
+                            <p class="date-comment">Hace 2 hora aproximadamente</p>
+                        </ion-col>
+                    </ion-row>
+
+                </ion-col>
+            </ion-row>
+
+        </ion-card>
+
+        <!--Termina-->
+
+    </ion-grid>
+    
+
+   
+
+    
+</ion-content>
